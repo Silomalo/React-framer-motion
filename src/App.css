@@ -1,0 +1,46 @@
+.popularmovies {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(142px, 1fr));
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}
+img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  border-radius: 1rem;
+  /* margin-bottom: 1rem; */
+}
+h2 {
+  font-size: 0.8rem;
+}
+.filter-container {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  padding: 5px;
+  /* border-radius: 30px; */
+  position: fixed;
+  width: 60%;
+}
+.filter-container button {
+  margin-right: 1rem;
+  min-width: 5rem;
+  padding: 0.5rem 0.2rem;
+  background: #ffffff;
+  color: black;
+  border: none;
+  border-radius: 1rem;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button.active {
+  background-color: #026305;
+  color: white;
+  border: 2px solid white;
+}
